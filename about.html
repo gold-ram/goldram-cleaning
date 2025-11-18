@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us — Gold Ram Cleaning Services LLC</title>
+  <meta name="description" content="Family-owned, flexible scheduling, and eco-friendly cleaning across Aurora and the Fox Valley suburbs.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="logo">
+      <img src="Logo.png" alt="Gold Ram Cleaning Services LLC logo">
+    </div>
+
+    <h1>Gold Ram Cleaning Services LLC</h1>
+
+    <!-- Holiday countdown lives in header (right cell in CSS grid) -->
+    <section id="holiday-deal" aria-label="Holiday Season Special">
+      <div class="deal-card" aria-labelledby="deal-title">
+        <h2 id="deal-title">Holiday Season Special</h2>
+        <p class="deal-sub">Book Now and save 15% off.</p>
+
+        <div class="countdown" role="timer" aria-live="polite">
+          <div class="count-box"><span id="cd-hours">00</span><small>Hours</small></div>
+          <div class="count-box"><span id="cd-mins">00</span><small>Minutes</small></div>
+          <div class="count-box"><span id="cd-secs">00</span><small>Seconds</small></div>
+        </div>
+
+        <div class="deal-actions">
+          <a class="btn primary" href="contact.html#quote">Claim Discount</a>
+        </div>
+
+        <p class="deal-note small">New bookings only. One per household. Some exclusions may apply.</p>
+      </div>
+    </section>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main id="main" class="container">
+    <section class="about-hero">
+      <div class="about-hero__text">
+        <h2>About Us</h2>
+        <p class="lead">
+          At Gold Ram Cleaning Service, LLC., we bring shine, style, and simplicity to every space. As a family-owned cleaning company, we take pride in combining trusted values with a modern approach — offering flexible 
+          scheduling, eco-friendly products, and courteous professionals who treat your home or business as their own. Our courteous staff takes pride in delivering exceptional service with a personal touch.
+          Located in Aurora, Illinois, we proudly serve Saint Charles, Geneva, Batavia, North Aurora, Naperville, Montgomery, Oswego, and Sugar Grove. From residential cleaning to commercial janitorial services, we provide reliable, 
+          affordable, and flexible cleaning tailored to your needs.
+          Whether it’s a cozy home, a busy office, or a large industrial facility, we’re here to make your environment cleaner, healthier, and stress-free. 
+        </p>
+      </div>
+
+      <figure class="about-hero__media">
+        <img src="image2.png" alt="Family owned business image showing care and teamwork">
+      </figure>
+    </section>
+
+
+    <section class="about-grid" aria-labelledby="about-grid-title">
+      <h2 id="about-grid-title" class="sr-only">Company Values and Benefits</h2>
+
+      <article class="card">
+        <h3>💫 Mission Statement</h3>
+        <p>“Taking on your cleaning mess head-on — the power of the Ram, delivered with the standard of Gold.” Our mission is to embody strength, integrity, and excellence in every detail. We approach each project with the power to transform and the gold standard of care, ensuring that every surface shines and every client feels valued.</p>
+      </article>
+
+      <aside class="card" aria-label="Why choose us">
+        <h3>🌟 Why Choose Us</h3>
+        <p>Experience the difference of service designed around you. We don’t just clean — we curate environments of comfort, clarity, and confidence.</p>
+        <ul class="bullet">
+          <li>💎 Tailored Scheduling: Flexible options for one-time deep cleans or recurring maintenance that fits your lifestyle.</li>
+          <li>💎 Eco-Luxe Products: Non-toxic, pet-friendly, and child-safe solutions for a spotless space without compromise.</li>
+          <li>💎 Trusted Professionals: Fully insured and background-checked team members care for your home or business with integrity.</li>
+          <li>💎 Family-Owned Excellence: Rooted in local values and pride, with personal attention and long-term trust.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <h4>Gold Ram Cleaning Services LLC</h4>
+        <p class="small">Serving Fox Valley & Chicagoland suburbs</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p class="small">Mon–Fri 8am–6pm<br>Sat 9am–5pm <br> Sun Closed</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="small">
+          <a href="tel:+13313009368">(331) 300-9368</a><br>
+          <a href="mailto:Lceniceros88@gmail.com">Lceniceros88@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="container" style="padding-top:0">
+      <p class="small">&copy; <span id="y"></span> Gold Ram Cleaning Services LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script src="countdown.js"></script>
+</body>
+</html>

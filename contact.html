@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us — Gold Ram Cleaning Services LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a quote or schedule a cleaning with Gold Ram Cleaning Services LLC.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="logo">
+    <img src="Logo.png" alt="Gold Ram Cleaning Services LLC logo">
+  </div>
+
+  <h1>Gold Ram Cleaning Services LLC</h1>
+
+  <section id="holiday-deal">
+    <div class="deal-card" aria-labelledby="deal-title">
+      <h2 id="deal-title">Holiday Season Special</h2>
+      <p class="deal-sub">Book Now and save 15% off.</p>
+
+      <div class="countdown" role="timer" aria-live="polite">
+        <div class="count-box"><span id="cd-hours">00</span><small>Hours</small></div>
+        <div class="count-box"><span id="cd-mins">00</span><small>Minutes</small></div>
+        <div class="count-box"><span id="cd-secs">00</span><small>Seconds</small></div>
+      </div>
+
+      <div class="deal-actions">
+        <a class="btn primary" href="contact.html#quote">Claim Discount</a>
+      </div>
+
+      <p class="deal-note small">New bookings only. One per household. Some exclusions may apply.</p>
+    </div>
+  </section>
+</header>
+
+
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+
+  <main id="main" class="container">
+    <section class="hero hero--contact">
+      <h2>✨Cleaning Services for Homes, Offices & More</h2>
+      <p class="lead">
+        Tired of dirt, grime, or stubborn odors? Let us handle the mess! At Gold Ram Cleaning Service, LLC., we deliver high-quality cleaning solutions tailored to residential, commercial, and industrial spaces. 
+        Whether you’re looking for residential or commercial cleaning, we’re here to help. Reach out directly or complete the form below for a quick, no-obligation quote—because a cleaner space starts today!
+      </p>
+    </section>
+
+    <section id="quote" aria-labelledby="quote-heading">
+      <h2 id="quote-heading" class="sr-only">Request a Free Quote</h2>
+
+      <form id="quote-form" class="contact-form"
+            action="mailto:Lceniceros88@gmail.com"
+            method="post"
+            enctype="text/plain">
+
+        <!-- Contact Information -->
+        <fieldset class="form-set">
+          <legend>Contact Information</legend>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(331) 300-9368" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field grow">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Aurora, IL">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Service Details -->
+        <fieldset class="form-set">
+          <legend>Service Details</legend>
+
+          <div class="row">
+            <div class="field">
+              <label for="service">Service Type (selection list)</label>
+              <select id="service" name="service" required>
+                <option value="" selected disabled>Choose a service…</option>
+                <option value="basic">Basic Cleaning</option>
+                <option value="deep">Deep Cleaning</option>
+                <option value="premium">Premium Cleaning</option>
+                <option value="commercial">Commercial / Office</option>
+                <option value="move">Move-In / Move-Out</option>
+                <option value="custom">Custom Quote</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <span class="label">Frequency (option buttons)</span>
+              <div class="choices" role="group" aria-label="Cleaning frequency">
+                <label><input type="radio" name="frequency" value="one-time" checked> One-time</label>
+                <label><input type="radio" name="frequency" value="weekly"> Weekly</label>
+                <label><input type="radio" name="frequency" value="biweekly"> Bi-weekly</label>
+                <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="sqft">Approx. Square Footage</label>
+              <input id="sqft" name="sqft" type="number" inputmode="numeric" min="300" step="50" placeholder="2000">
+            </div>
+            <div class="field">
+              <label for="beds">Bedrooms</label>
+              <input id="beds" name="beds" type="number" inputmode="numeric" min="0" step="1" placeholder="3">
+            </div>
+            <div class="field">
+              <label for="baths">Bathrooms</label>
+              <input id="baths" name="baths" type="number" inputmode="numeric" min="0" step="1" placeholder="2">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field grow">
+            <label for="sqft">Premium Options</label>
+              <div class="choices" role="group" aria-label="Extra services">
+               <label><input type="checkbox" name="extras" value="steam"> Steam Cleaning</label>
+               <label><input type="checkbox" name="extras" value="carpet"> Carpet Cleaning</label>
+               <label><input type="checkbox" name="extras" value="odor"> Ozone Odor Removal</label>
+               <label><input type="checkbox" name="extras" value="power-wash"> Power Washing</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Notes -->
+        <fieldset class="form-set">
+          <legend>Notes</legend>
+          <div class="row">
+            <div class="field grow">
+              <label for="notes">Anything we should know?</label>
+              <textarea id="notes" name="notes" rows="5"
+                placeholder="Preferred dates/times, pets, entry instructions, parking, etc."></textarea>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <div class="small notes">
+         By submitting, you agree we may contact you regarding your request.
+        </div>
+
+
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Submit</button>
+          <button class="btn secondary" type="reset">Reset</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <h4>Gold Ram Cleaning Services LLC</h4>
+        <p class="small">Reliable, insured, and eco-friendly cleaning services.</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p class="small">Mon–Fri 8am–6pm<br>Sat 9am–2pm • Sun Closed</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="small">
+          <a href="tel:+13313009368">(331) 300-9368</a><br>
+          <a href="mailto:Lceniceros88@gmail.com">Lceniceros88@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="container" style="padding-top:0">
+      <p class="small">&copy; <span id="y"></span> Gold Ram Cleaning Services LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script src="countdown.js"></script>
+</body>
+</html>
